@@ -1,6 +1,6 @@
-FROM haproxy:2.2-alpine
+FROM haproxy:2.7-alpine
 
-EXPOSE 2375
+EXPOSE 2735 2376
 ENV ALLOW_RESTARTS=0 \
     AUTH=0 \
     BUILD=0 \
@@ -18,7 +18,7 @@ ENV ALLOW_RESTARTS=0 \
     NODES=0 \
     PING=1 \
     PLUGINS=0 \
-    POST=0 \
+    POST=1 \
     SECRETS=0 \
     SERVICES=0 \
     SESSION=0 \
